@@ -4,7 +4,8 @@ interface IGetData {
 
 const GetData = async ({ url }: IGetData) => {
   const response = await fetch(url);
-  return response.json();
+  const data = await response.json();
+  return data;
 };
 
 export default GetData;
