@@ -1,10 +1,10 @@
 # Welcome to React Component Library
 
-I created this project to learn how a library works inside and to centralize the most used React components in a single repository.
+I created this project to put into practice my knowledge about libraries and how it works. In addition, I chose some of the typical React components to unify into a repository.
 
 ## Documentation
 
-You can find the RCL documentation [on the website](https://reactjs.org/).  
+You can find the RCL documentation [on the website](https://rcl-documentation.vercel.app/).  
 
 ## Install
 
@@ -21,13 +21,15 @@ import React from "react";
 import { Button } from "@gomeznahuel/react-components-library";
 
 const Example = () => {
-    const handleClick = () => {
-        alert("Button clicked!");
-    };
+  const handleClick = () => {
+    alert("Button clicked!");
+  };
 
-    return (
-        <Button className="btn btn-success" onClick={handleClick} label="Click!" />
-    );
+  return (
+    <>
+      <Button className="btn btn-success" onClick={handleClick} label="Click!" />
+    </>
+  );
 };
 
 export default Example;
